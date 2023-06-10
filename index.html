@@ -15,21 +15,21 @@
         <h2>Рассчитайте стоимость автомобиля:</h2>
         <form>
             <label for="">Выберите марку автомобиля
-                <select name="" id="">
+                <select name="mark car" id="mark_car">
                     <option value="empty" hidden></option>
-                    <option value="">Jaguar</option>
-                    <option value="">Mazda</option>газ
-                    <option value="">Opel</option>
-                    <option value="">Reno</option>
+                    <option value="jaguar" id="jaguar">Jaguar</option>
+                    <option value="mazda" id="mazda">Mazda</option>газ
+                    <option value="opel" id="opel">Opel</option>
+                    <option value="renoult" id="renoult">Renoult</option>
                 </select>
             </label>
             <label for="">Укажите модель автомобиля
-                <select name="" id="">
+                <select name="model car" id="model_car">
                     <option value="empty" hidden></option>
-                    <option value="">Седан</option>
-                    <option value="">Хэтчбек</option>
-                    <option value="">Кроссовер</option>
-                    <option value="">Кабриолет</option>
+                    <option value="sedan" id="sedan">Седан</option>
+                    <option value="hatchback" id="hatchback">Хэтчбек</option>
+                    <option value="crossover" id="crossover">Кроссовер</option>
+                    <option value="cabriolet" id="cabriolet">Кабриолет</option>
                 </select>
             </label>
             <label for="">Вид топлива
@@ -42,12 +42,12 @@
                 <input type="text" name="" id="">
             </label>
             <label>Состояние автомобиля
-                <input type="checkbox" value="new">Новый
-                <input type="checkbox" value="used">Б/У
+                <input type="checkbox" name="condition" value="new" id="new">Новый
+                <input type="checkbox" name="condition" value="used" id="used">Б/У
             </label>
             <label>Способ оплаты
-                <input type="radio" name="payment method" value="cash">Наличные
-                <input type="radio" name="payment method" value="card">Карта
+                <input type="radio" name="payment method" value="cash" id="cash">Наличные
+                <input type="radio" name="payment method" value="card" id="card">Карта
             </label>
         </form>
         <div class="car_price">Стоимость авто составит:</div>
