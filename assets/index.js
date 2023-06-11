@@ -1,3 +1,6 @@
+// Создаем переменную для события click
+const button = document.querySelector('.button');
+
 // Создаем переменные для марок авто
 const jaguar = document.getElementById('jaguar');
 const mazda = document.getElementById('mazda');
@@ -6,3 +9,10 @@ const renault = document.getElementById('renault');
 
 // Создаем переменные для элементов
 const formCalc = document.getElementById('form_calc');
+
+
+
+button.addEventListener('click', () => {
+
+
+});
