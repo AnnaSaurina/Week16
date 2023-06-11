@@ -2,5 +2,7 @@
 const jaguar = document.getElementById('jaguar');
 const mazda = document.getElementById('mazda');
 const opel = document.getElementById('opel');
-const renoult = document.getElementById('renoult');
+const renault = document.getElementById('renault');
 
+// Создаем переменные для элементов
+const formCalc = document.getElementById('form_calc');
