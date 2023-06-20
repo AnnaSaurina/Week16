@@ -19,6 +19,11 @@ const mazdaModels = '';
 const opelModels = '';
 const renaultModels = '';
 
+// Создаем переменные о типе топлива, состоянии, оплате
+const ownersNumber = document.querySelector('.owners_number');
+const statusLabel = document.getElementById('used');
+const
+
 // Создаем переменную для события click
 const button = document.querySelector('.button');
 
@@ -29,10 +34,10 @@ function chooseMarkCar () {
         <label for="mark_cars">Модели автомобилей
                 <select name="mark cars" id="jaguar_models">
                     <option value="empty" hidden></option>
-                    <option value="4000000">Jaguar I-PACE</option>
-                    <option value="2900000">Jaguar F-PACE</option>
-                    <option value="3000000">Jaguar E-PACE</option>
-                    <option value="4500000">Jaguar F-TYPE</option>
+                    <option value="4 000 000">Jaguar I-PACE</option>
+                    <option value="2 900 000">Jaguar F-PACE</option>
+                    <option value="3 000 000">Jaguar E-PACE</option>
+                    <option value="4 500 000">Jaguar F-TYPE</option>
                 </select>
             </label>`;
         jaguarModels = document.getElementById('jaguar_models');
@@ -42,10 +47,10 @@ function chooseMarkCar () {
         <label for="mark_cars">Модели автомобилей
                 <select name="mark cars" id="mazda_models">
                     <option value="empty" hidden></option>
-                    <option value="2600000">Mazda 3</option>
-                    <option value="2900000">Mazda 6</option>
-                    <option value="3500000">Mazda CX-30</option>
-                    <option value="4300000">Mazda CX-5</option>
+                    <option value="2 600 000">Mazda 3</option>
+                    <option value="2 900 000">Mazda 6</option>
+                    <option value="3 500 000">Mazda CX-30</option>
+                    <option value="4 300 000">Mazda CX-5</option>
                 </select>
             </label>`;
         mazdaModels = document.getElementById('mazda_models');
@@ -55,10 +60,10 @@ function chooseMarkCar () {
         <label for="mark_cars">Модели автомобилей
             <select name="mark cars" id="opel_models">
                 <option value="empty" hidden></option>
-                <option value="1700000">Opel Corsa</option>
-                <option value="2000000">Opel Astra</option>
-                <option value="2300000">Opel Crossland</option>
-                <option value="2400000">Opel Zafira</option>
+                <option value="1 700 000">Opel Corsa</option>
+                <option value="2 000 000">Opel Astra</option>
+                <option value="2 300 000">Opel Crossland</option>
+                <option value="2 400 000">Opel Zafira</option>
             </select>
         </label>`;
         opelModels = document.getElementById('opel_models');
@@ -68,10 +73,10 @@ function chooseMarkCar () {
         <label for="mark_cars">Модели автомобилей
             <select name="mark cars" id="renault_models">
                 <option value="empty" hidden></option>
-                <option value="2100000"Renault Kaptur</option>
-                <option value="2000000">Renault Duster</option>
-                <option value="2300000">Renault Arkana</option>
-                <option value="1500000">Renault Sandero</option>
+                <option value="2 100 000"Renault Kaptur</option>
+                <option value="2 000 000">Renault Duster</option>
+                <option value="2 300 000">Renault Arkana</option>
+                <option value="1 500 000">Renault Sandero</option>
             </select>
         </label>`;
         renaultModels = document.getElementById('renault_models');
@@ -79,6 +84,18 @@ function chooseMarkCar () {
     }
 }
 
+// Создаем функцию о состоянии авто и количестве владельцев
+function markStatus () {
+    if (statusLabel.value === 'used') {
+        ownersNumber.innerHTML = `
+        <label>
+            <input type="radio" name="owners" value="0.9">1-2 владельца
+            <input type="radio" name="owners" value="0.8">3 и более
+        </label>`
+    }
+}
+
+//  
 // Создаем событие для клика
 // button.addEventListener('click', () => {
 
