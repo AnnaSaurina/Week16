@@ -2,6 +2,7 @@
 const markCar = document.getElementById('mark_car');
 const fuelTypeCar = document.querySelector('fuel_type_car');
 
+
 // Создаем переменные для марок авто
 const jaguar = document.getElementById('jaguar');
 const mazda = document.getElementById('mazda');
@@ -22,7 +23,8 @@ const renaultModels = '';
 // Создаем переменные о типе топлива, состоянии, оплате
 const ownersNumber = document.querySelector('.owners_number');
 const statusLabel = document.getElementById('used');
-const
+const engineVolume = document.getElementById('engine_volume');
+const carPower = '';
 
 // Создаем переменную для события click
 const button = document.querySelector('.button');
@@ -95,9 +97,16 @@ function markStatus () {
     }
 }
 
-//  
-// Создаем событие для клика
-// button.addEventListener('click', () => {
+// Создаем функцию для объема двигателя
+
+function inputVovume () {
+    if (engineVolume.value >=3.1) {
+        carPower = 1;
+    } else if (engineVolume.value >=2 ) {
+        carPower = 0.98;
+    } else if (engineVolume <= 1.99) {
+        carPower = 0.96;
+    }
+}
 
 
-// });
