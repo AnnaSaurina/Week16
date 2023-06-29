@@ -110,3 +110,9 @@ function inputVovume () {
 }
 
 
+
+// Создаем событие для клика
+// button.addEventListener('click', () => {
+ 
+
+// });
